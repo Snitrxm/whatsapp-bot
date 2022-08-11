@@ -1,0 +1,1 @@
+{"version":3,"file":"handler.js","sourceRoot":"","sources":["../../../../src/functions/send-message/handler.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAEO,IAAM,KAAK,GAAG,UAAO,KAAsB;;QAChD,sBAAO;gBACL,UAAU,EAAE,GAAG;gBACf,IAAI,EAAE,IAAI,CAAC,SAAS,CAAC,EAAE,OAAO,EAAE,uBAAuB,EAAE,CAAC;aAC3D,EAAC;;KACH,CAAC;AALW,QAAA,KAAK,SAKhB"}
