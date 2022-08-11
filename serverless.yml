@@ -31,4 +31,5 @@ functions:
 plugins: 
   - serverless-plugin-typescript
   - serverless-dotenv-plugin
+  - serverless-offline
           

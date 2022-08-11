@@ -1,1 +1,0 @@
-{"version":3,"file":"api-gateway.js","sourceRoot":"","sources":["../../../src/libs/api-gateway.ts"],"names":[],"mappings":";;;AAKO,IAAM,kBAAkB,GAAG,UAAC,QAAmB;IAEpD,OAAO;QACL,UAAU,EAAE,QAAQ,CAAC,UAAU;QAC/B,IAAI,EAAE,IAAI,CAAC,SAAS,CAAC,QAAQ,aAAR,QAAQ,uBAAR,QAAQ,CAAE,IAAI,CAAC;KACrC,CAAA;AACH,CAAC,CAAA;AANY,QAAA,kBAAkB,sBAM9B"}

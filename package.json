@@ -19,6 +19,7 @@
     "axios": "^0.27.2",
     "pg": "^8.7.3",
     "serverless-dotenv-plugin": "^4.0.2",
+    "serverless-offline": "^9.2.0",
     "speakeasy": "^2.0.0"
   }
 }
