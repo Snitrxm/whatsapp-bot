@@ -11,11 +11,11 @@ provider:
 
 functions:
   send-message:
-    handler: src/functions/send-message/handler.hello
+    handler: src/functions/finish-step/handler.finish_step
     events:
       - http:
-          path: /
-          method: get
+          path: /finish-step
+          method: post
           cors: true
   2fa-flow:
     handler: src/functions/2fa-flow/handler.start_2fa_flow
@@ -26,6 +26,15 @@ functions:
           cors: {
             origin: "*"
           }
+  button-events:
+    handler: src/functions/button-events/handler.button_events
+    events:
+      - http:
+          path: /button_events
+          method: post
+          cors: {
+            origin: "*"
+          }        
 
 
 plugins: 

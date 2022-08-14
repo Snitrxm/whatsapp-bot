@@ -4,9 +4,7 @@ import { ITokensRepository } from "../../domain/Tokens/repository/ITokensReposit
 import IHttpRequestAdapter from "../../libs/utils/adapters/httpRequestAdapter/IHttpRequestAdapter";
 
 interface IRequest {
-  buttonsResponseMessage: {
-    buttonId: string;
-  },
+  buttonsResponseMessage: string;
   phone: string;
 }
 
@@ -26,12 +24,12 @@ class HandleButtonEventService {
     };
 
     let token: Token
-    if (buttonsResponseMessage.buttonId === "cadastroSIM") {
+    if (buttonsResponseMessage === "cadastroSIM" as string) {
       const tokenCode = speakeasy.totp({
         secret: phone,
       });
 
-      messageContent.message = `Opa, obrigado pela confirmação! Seu token é: ${tokenCode}.`;
+      messageContent.message = `Obrigado pela confirmação! Seu token é: ${tokenCode.toString()}.`;
 
       const userInfo =
         phone.length === 12
@@ -44,7 +42,7 @@ class HandleButtonEventService {
       token = new Token(userInfo, tokenCode);
 
       await this.tokensRepository.create(token);
-    } else if (buttonsResponseMessage.buttonId === "cadastroNAO") {
+    } else if (buttonsResponseMessage === "cadastroNAO" as string) {
       messageContent.message = "Opa, provavelmente alguém tentou se cadastrar em nossa plataforma com seu número. Peço desculpas pelo inconveniente. Já estamos tomando as medidas necessárias.";
     }
 
